@@ -3,7 +3,7 @@ from ptorru_matmul import __version__
 from ptorru_matmul import ptorru_matmul
 
 def test_version():
-    assert __version__ == '0.1.0'
+    assert __version__ == '0.1.3'
 
 
 def test_matmul():
