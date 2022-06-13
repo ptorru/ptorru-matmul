@@ -22,7 +22,7 @@ poetry add ptorru-matmul
 
 ```python
 import numpy as np
-from ptorru_matmul import ptorru_matmul
+from ptorru_matmul import matmul
 sides = 3
 a = np.arange(sides*sides).reshape(sides,sides)
 b = np.arange(sides*sides).reshape(sides,sides)
