@@ -1,8 +1,8 @@
-__version__ = '0.1.3'
+__version__ = '0.1.4'
 
 import numpy as np
 
-def ptorru_matmul(a,b):
+def matmul(a,b):
     assert a.shape == b.shape
     assert a.shape[0] == a.shape[1]
     sides = a.shape[0]

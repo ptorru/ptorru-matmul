@@ -26,7 +26,7 @@ from ptorru_matmul import ptorru_matmul
 sides = 3
 a = np.arange(sides*sides).reshape(sides,sides)
 b = np.arange(sides*sides).reshape(sides,sides)
-c = ptorru_matmul(a,b)
+c = matmul(a,b)
 assert np.array_equal(c, np.matmul(a,b))
 print(a,b)
 print(c)
