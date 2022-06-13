@@ -2,40 +2,32 @@
 
 Learning about pipy, distributing a simple matrix multiply example
 
-# Dependencies
+To consult how to distribute a package in PyPI take a look at the [publish_notes.md](https://github.com/ptorru/ptorru-matmul/blob/main/publish_notes.md)
 
-[Poetry](https://python-poetry.org), [installation instructions](https://python-poetry.org/docs/).
+# Installing this package
 
-# After clonning
-
-```bash
-cd ptorru-matmul
-poetry init
-```
-
-# Running tests
+Using [PyPI](https://pypi.org)
 
 ```bash
-poetry run pytest tests/
+pip install ptorru-matmul
 ```
 
-# Publishing
-
-## Setup PyPI token
+Alternatively use [poetry](https://python-poetry.org)
 
 ```bash
-poetry config pypi-token.pypi <TOKEN>
+poetry add ptorru-matmul
 ```
 
-## Build and Publish
+# Using this package
 
-```bash
-poetry build
-poetry publish
+```python
+import numpy as np
+from ptorru_matmul import ptorru_matmul
+sides = 3
+a = np.arange(sides*sides).reshape(sides,sides)
+b = np.arange(sides*sides).reshape(sides,sides)
+c = ptorru_matmul(a,b)
+assert np.array_equal(c, np.matmul(a,b))
+print(a,b)
+print(c)
 ```
-
-# References
-
-Consulted these resources:
-
-- [Utpal Kumar, The easiest way to publish a python package on PyPI using Poetry](https://www.earthinversion.com/utilities/easiest-way-to-publish-a-python-package-using-poetry/)
