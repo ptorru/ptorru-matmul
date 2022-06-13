@@ -1,8 +1,14 @@
 [tool.poetry]
 name = "ptorru-matmul"
-version = "0.1.0"
-description = ""
-authors = ["Pedro Torruella <ptorru14@gmail.com>"]
+version = "0.1.1"
+description = "Learning how to publish in PyPi through a generic implementation of matrix multiplication"
+authors = ["Pedro Torruella"]
+license = ["MIT"]
+readme = "README.md"
+python = "^3.9"
+homepage = "https://github.com/ptorru/ptorru-matmul"
+repository = "https://github.com/ptorru/ptorru-matmul"
+documentation = "https://github.com/ptorru/ptorru-matmul/blob/main/README.md"
 
 [tool.poetry.dependencies]
 python = "^3.9"
