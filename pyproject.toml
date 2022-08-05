@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "ptorru-matmul"
-version = "0.1.4"
+version = "0.1.5"
 description = "Learning how to publish in PyPi through a generic implementation of matrix multiplication"
 authors = ["Pedro Torruella"]
 license = "MIT"
